@@ -1,0 +1,30 @@
+[settings]
+theme = "dark"
+
+[settings.background]
+use_solid_bg = false # Whether to use a solid bg or a video/image bg
+bg_color = "24, 24, 24" # RGB Values
+bg_path = "data/assets/background.mp4" # Path to the bg image or video (only if `use_solid_bg=false`)
+opacity = 0.1
+
+[settings.transition]
+transition_path = "data/assets/transition.mp4"
+
+[settings.tts]
+tiktok_title_voice = "en_au_002"
+tiktok_comment_voice = "en_us_006"
+tiktok_reply_voice = "en_us_007"
+
+[settings.comment]
+opacity = 0.9
+
+[reddit.creds]
+client_id = ""
+client_secret = ""
+username = ""
+password = ""
+2fa = false
+
+[reddit.thread]
+post_id = ""
+n_of_comments = 30

@@ -1,0 +1,17 @@
+{
+  "name": "node_image_renderer",
+  "version": "1.0.0",
+  "description": "CLI App to render the images in a folder (works with the Auax Reddit Video Creator)",
+  "main": "screenshot_comments.js",
+  "scripts": {
+    "test_comments": "node screenshot_comments.js --path ../data/results/temp/comments --json ../data/results/comments.json --max 2",
+    "test_title": "node screenshot_title.js --path ../data/results/temp/title --title Example --author example --score 1000"
+  },
+  "author": "Ibai Farina",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^9.4.0",
+    "es6-template-strings": "^2.0.1",
+    "node-html-to-image": "^3.2.4"
+  }
+}

@@ -1,0 +1,92 @@
+<!--TEMPLATE TO RENDER THE A COMMENT IMAGE
+COMPONENT FOR `AUAX REDDIT VIDEO CREATOR`
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <p class="author">${author}
+        <span class="score">${score} points</span>
+    </p>
+    <p class="content">${content}</p>
+
+    <div class="reply ${reply_display_class} ${invisible_class}">
+        <div class="reply-line"></div>
+        <div>
+            <p class="author">${reply_author}
+                <span class="score">${reply_score} points
+                </span></p>
+            <p class="content">${reply_content}</p>
+        </div>
+    </div>
+</div>
+<style>
+    :root {
+        --wrapper_width: 1400px;
+        --padding: 20px;
+        --reply-margin: 15px;
+        --author-size: .8em;
+    }
+
+    * {
+        font-family: Roboto, Verdana, Avenir, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    body {
+        background-color: transparent;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .wrapper {
+        background-color: #181818;
+        max-width: var(--wrapper_width);
+        padding: var(--padding);
+    }
+
+    .author {
+        font-size: .8em;
+        color: #5ca5d8;
+    }
+
+    .content {
+        color: #dedede;
+    }
+
+    .reply {
+        display: grid;
+        grid-template-columns: 10px auto;
+        grid-gap: 2px;
+        margin-left: var(--reply-margin);
+        margin-top: var(--reply-margin);
+    }
+
+    .reply-line {
+        width: 3px;
+        margin-top: calc(1em - var(--author-size));
+        background-color: #646464;
+    }
+
+    .score {
+        color: #646464;
+        margin-left: 2px;
+    }
+
+    .d-none {
+        display: none !important;
+    }
+
+    .invisible {
+        opacity: 0;
+    }
+
+</style>
+</body>
+</html>
