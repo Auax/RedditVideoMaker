@@ -86,7 +86,6 @@ def main():
         console.log("Rendering, grab a ", ":coffee:", "...")
         render_video(n_of_comments=N_OF_COMMENTS)
         console.log("Video created")
-        os.startfile("data/results")
 
 
 if __name__ == "__main__":
