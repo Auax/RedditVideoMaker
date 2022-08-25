@@ -49,12 +49,17 @@ class TikTokTTS:
                 r = session.post(f"{self.URI_BASE}{voice}&req_text={text}&speaker_map_type=0")
 
             data = r.json()
-            if data["message"] == "Text too long to create speech audio":
-                # If we couldn't split the text
+
+            print(data)
+
+            msg = data["message"]
+            if msg.startswith("Text too long") or msg.startswith("Couldn't load speech"):
+                # If we couldn't split the text or the speach couldn't be loaded properly
                 if os.path.exists(filename):
                     os.remove(filename)
                 return False
 
+            print(data)
             vstr = [data["data"]["v_str"]][0]  # Get data
             b64d = base64.b64decode(vstr)  # Decode data
 

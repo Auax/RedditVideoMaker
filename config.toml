@@ -26,5 +26,5 @@ password = ""
 2fa = false
 
 [reddit.thread]
-post_id = ""
-n_of_comments = 30
+post_id = "wxbekm"
+n_of_comments = 14

@@ -4,6 +4,7 @@
     <p>
       Automatically generate Reddit videos.
     </p>
+<h4 style="color:red">Note: The TTS TikTok API doesn't currently work. I will implement another TTS service soon.</h4>
     <img src="https://user-images.githubusercontent.com/16353807/183256021-2772e9fe-f26e-4f5e-bc95-2e093f0ffdaa.png" alt="screenshot" width="100%">
 </div>
 
